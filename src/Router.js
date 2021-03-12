@@ -4,8 +4,8 @@ import Chatbox from './Chatbox';
 import FriendList from './FriendList';
 import Profile from './Profile';
 
-function Router()
-{
+function Router(){
+
 
     return(
       <BrowserRouter>
@@ -19,10 +19,18 @@ function Router()
             <Route path = "/">
               <Chatbox />
             </Route>
+
+            <Route path = "/DarkChat">
+              <DarkChat />
+            </Route>
+            <Route path = "/NormalPage">
+              <NormalPage />
+            </Route>
+            <Route path ="/">
+              <Chatbox />
+            </Route>
         </Switch>
-     </BrowserRouter> 
-
+     </BrowserRouter>
     )
-};
-
+}
 export default Router;
